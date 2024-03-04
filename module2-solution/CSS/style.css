@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.background {
+    width: 100%;
+}
+
+.primary-heading {
+    margin: 2.4rem 0;
+    text-align: center;
+    font-size: 5.2rem;
+}
+
+.main-container {
+    margin: 3.6rem 2.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    gap: 2.4rem;
+}
+
+.food-div {
+
+    background-color: grey;
+    padding: 1.2rem;
+    position: relative;
+    border: 4px solid black;
+}
+
+.label-div {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 30%;
+    text-align: center;
+}
+
+.label {
+    font-size: 1.8rem;
+    padding: 0.6rem 0;
+    border: 4px solid black;
+    font-weight: 900;
+}
+
+.chicken-label {
+    background-color: rgb(213, 152, 152);
+}
+
+.beef-label {
+    background-color: rgb(193, 69, 67);
+    color: white;
+}
+
+.sushi-label {
+    background-color: rgb(229, 209, 152);
+}
+
+.description {
+    margin-top: 3.6rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sushi-food {
+        grid-column: 1 / -1;
+    } 
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+    .sushi-food {
+        grid-column: 1;
+    } 
+}
+
